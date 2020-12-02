@@ -6,4 +6,4 @@ Day2: Day2PasswordPhilosophy.cpp
 	g++ -o Day2 Day2PasswordPhilosophy.cpp -Wall -std=c++11
 
 clean:
-	rm *.o Day1 
+	rm Day1 Day2
