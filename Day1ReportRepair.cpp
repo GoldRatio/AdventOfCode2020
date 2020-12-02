@@ -1,7 +1,7 @@
 /*
 Phillip Peng
 
-Code Description: Solves Day1/2020/ Advent of Code problem
+Code Description: Solves Day1/2020 Advent of Code problem
 TODO: Change it into a function call so it eats less memory as well as able to do more functions
 */
 
@@ -17,13 +17,8 @@ int main()
 	int currValue;
 
 	std::ifstream inStream;
-	std::string inFile = "Day1Input.txt";
-	inStream.open(inFile);
-	if(inStream.fail())
-	{
-		std::cerr << "File open fail\n";
-		exit(1);
-	}
+	inStream.open("Day1Input.txt");
+	if(inStream.fail()){std::cerr << "File open fail\n"; exit(1);}
 	
 	while(!inStream.eof())
 	{
